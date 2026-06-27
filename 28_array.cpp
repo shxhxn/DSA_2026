@@ -6,16 +6,16 @@ int n = 5;
 
 
 for(int i = 0; i < n; i++){    // loop for selecting the first element and the further ones
-  int smallest = arr[i];
+  int smallest = i;
   for(int j = i; j < n; j++){  // loop for finding the smallest element.   j = i is basically helping us to not start the smallest no. finder loop all the way from the start
-    if(smallest > arr[j]){
-      smallest = arr[j];
+    if(arr[smallest] > arr[j]){
+      smallest = j;
     }
   }
-  if(arr[i] > smallest){
-    int temp = arr[i];        // ill fix it later, alr took 2 hours
+  if(arr[i] > arr[smallest]){
+    int temp = arr[i];        // ill fix it later, alr took 2 hours,
     arr[i] = arr[smallest];
-    arr[smallest] = temp;
+    arr[smallest] = temp;   // FIXED LESGOOO, I MADE MISTAKE OF smallest = arr[j] and using smallest instead of arr[smallest]
   }
 }
 
