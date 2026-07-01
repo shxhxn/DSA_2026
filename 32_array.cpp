@@ -1,9 +1,9 @@
-#include<iostream>
+#include<iostream> // remove the target then tell the size of array.
 int main(){
 
 int arr[4] = {3,2,2,3};
 int val = 3;
-int n = 4;
+int n = 4;               // TO FIX, this is not working for two 3s if they come simultaneously.. FIX FIX FIX.
 int size = 4;
 
 
